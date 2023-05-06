@@ -20,7 +20,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cy:open": "Cypress open",
+    "cy:e2e": "cypress open --e2e --browser electron",
+    "dev": "start-server-and-test start 3000 cy:open ",
+    "e2e": "start-server-and-test start 3000 cy:e2e "
+
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +44,7 @@
   },
   "devDependencies": {
     "@types/react-dom": "^18.0.8",
-    "cypress": "^12.11.0"
+    "cypress": "^12.11.0",
+    "start-server-and-test": "^2.0.0"
   }
 }
