@@ -8,9 +8,7 @@ describe('hint', () => {
       })
 
       cy.contains('.overlay__text', 'You') .should('be.visible');
-      cy.contains('.overlay__textspan1', 'solved') .should('be.visible');
-      cy.contains('.overlay__textspan2', 'it!') .should('be.visible');
-      
+      cy.contains('.overlay__textspan1', 'solved') .should('be.visible')
+      cy.contains('.overlay__textspan2', 'it!') .should('be.visible')
 })
-
   })
